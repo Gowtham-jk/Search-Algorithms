@@ -19,7 +19,25 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 
 
 ```
@@ -27,22 +45,61 @@ ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
 
 
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 
 
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
 
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 
 
 
 ```
 ## Sample Input and Output
+![Screenshot 2024-03-24 193805](https://github.com/Gowtham-jk/Search-Algorithms/assets/149857834/3acf2385-4908-4a7f-84ae-549d5495937f)
+
+![Screenshot 2024-03-24 193821](https://github.com/Gowtham-jk/Search-Algorithms/assets/149857834/7301cb86-4a70-4ccb-94a2-b8dede656b1b)
 
 
-
+![Screenshot 2024-03-24 193835](https://github.com/Gowtham-jk/Search-Algorithms/assets/149857834/d8ab4508-5ad2-4f11-b4d6-9c6f0210379e)
 
 
 
